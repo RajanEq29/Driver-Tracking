@@ -12,12 +12,12 @@ export interface LoginResponse {
 }
 
 export const loginApi = async (credentials: LoginRequest): Promise<LoginResponse> => {
-    if(credentials.email === 'rajan@gmail.com' && credentials.password === '12345678') {
-        return {token: 'fake-jwt-token-for-rajan'};
-    }
+    // if(credentials.email === 'rajan@gmail.com' && credentials.password === '12345678') {
+    //     return {token: 'fake-jwt-token-for-rajan'};
+    // }
   const response = await axios.post<LoginResponse>(`${AUTH_BASE_URL}/login`, credentials, {
     headers: {
-      'x-api-key': 'reqres-free-v1',
+      'x-api-key': 'reqres_302b2b81596745908a19b670233aa94d',
     },
   });
   return response.data;

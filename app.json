@@ -28,7 +28,8 @@
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION"
-      ]
+      ],
+      "package": "com.rajaneqartis.DriverTrackingApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,6 +37,11 @@
     "plugins": [
       "expo-asset",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "32238852-ce45-400d-b23c-41a9e959b21b"
+      }
+    }
   }
 }
